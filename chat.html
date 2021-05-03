@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding bootstrap (css) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>IoT Chat Demo</title>
+</head>
+
+<body style="padding: 70px;">
+    <h1>The IoT Chat</h1>
+    <br>
+    <div class="col-6">
+        <div class="form-group">
+            <label>User</label>
+            <input id="name_input" class="form-control"  placeholder="Type your name">
+        </div>
+
+        <div id = "chat_window" class="form-control" style="overflow:scroll; height: 300px;border:1px solid grey ;border-style: line; border-radius: 5px; padding:10px">
+        </div>
+
+        <div class="form-group">
+            <label></label>
+            <input id="message_input" class="form-control"  placeholder="Type a message">
+        </div>
+
+    </div>
+    <!--Adding client library for MQTT-->
+    <script src="https://unpkg.com/mqtt@4.2.6/dist/mqtt.min.js"></script> 
+     <!-- Adding bootstrap (js) -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <script src="chat.js"></script>
+</body>
+</html>
